@@ -362,6 +362,12 @@ export function getHeaders(ignoreHeaders: boolean = false) {
     );
   }
 
+  // file-chat: add conversation id header
+  const sessionId = chatStore.currentSession().id;
+  if (sessionId) {
+    headers["X-Conversation-Id"] = sessionId;
+  }
+
   return headers;
 }
 

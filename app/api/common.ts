@@ -98,6 +98,10 @@ export async function requestOpenai(req: NextRequest) {
       ...(serverConfig.openaiOrgId && {
         "OpenAI-Organization": serverConfig.openaiOrgId,
       }),
+      // file-chat: forward conversation id
+      ...(req.headers.get("X-Conversation-Id") && {
+        "X-Conversation-Id": req.headers.get("X-Conversation-Id")!,
+      }),
     },
     method: req.method,
     body: req.body,
