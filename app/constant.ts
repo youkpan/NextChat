@@ -1,6 +1,6 @@
-export const OWNER = "ChatGPTNextWeb";
+export const OWNER = "youkpan";
 export const REPO = "ChatGPT-Next-Web";
-export const REPO_URL = `https://github.com/${OWNER}/${REPO}`;
+export const REPO_URL = `https://zyinfo.pro/file-chat/`;
 export const PLUGINS_REPO_URL = `https://github.com/${OWNER}/NextChat-Awesome-Plugins`;
 export const ISSUE_URL = `https://github.com/${OWNER}/${REPO}/issues`;
 export const UPDATE_URL = `${REPO_URL}#keep-updated`;
@@ -422,7 +422,7 @@ You are an AI assistant with access to system tools. Your role is to help users 
 
 export const SUMMARIZE_MODEL = "gpt-4o-mini";
 export const GEMINI_SUMMARIZE_MODEL = "gemini-pro";
-export const DEEPSEEK_SUMMARIZE_MODEL = "deepseek-chat";
+export const DEEPSEEK_SUMMARIZE_MODEL = "deepseek-v4-flash";
 
 export const KnowledgeCutOffDate: Record<string, string> = {
   default: "2021-09",
@@ -457,8 +457,8 @@ export const KnowledgeCutOffDate: Record<string, string> = {
   // it's now easier to add "KnowledgeCutOffDate" instead of stupid hardcoding it, as was done previously.
   "gemini-pro": "2023-12",
   "gemini-pro-vision": "2023-12",
-  "deepseek-chat": "2024-07",
-  "deepseek-coder": "2024-07",
+  "deepseek-v4-flash": "2024-07",
+  "deepseek-v4-pro": "2024-07",
 };
 
 export const DEFAULT_TTS_ENGINE = "OpenAI-TTS";
@@ -650,7 +650,11 @@ const iflytekModels = [
   "4.0Ultra",
 ];
 
-const deepseekModels = ["deepseek-chat", "deepseek-coder", "deepseek-reasoner"];
+const deepseekModels = [
+  "deepseek-v4-flash",
+  "deepseek-v4-pro",
+  "deepseek-reasoner",
+];
 
 const xAIModes = [
   "grok-beta",
@@ -718,7 +722,7 @@ const siliconflowModels = [
 ];
 
 const ai302Models = [
-  "deepseek-chat",
+  "deepseek-v4-flash",
   "gpt-4o",
   "chatgpt-4o-latest",
   "llama3.3-70b",
