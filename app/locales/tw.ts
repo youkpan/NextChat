@@ -7,14 +7,13 @@ const tw = {
   WIP: "此功能仍在開發中……",
   Error: {
     Unauthorized: isApp
-      ? `😆 對話遇到了一些問題，不用慌:
-    \\ 1️⃣ 想要無須設定開箱即用，[點選這裡立刻開啟對話 🚀](${SAAS_CHAT_UTM_URL})
-    \\ 2️⃣ 如果你想消耗自己的 OpenAI 資源，點選[這裡](/#/settings)修改設定 ⚙️`
-      : `😆 對話遇到了一些問題，不用慌:
-    \ 1️⃣ 想要無須設定開箱即用，[點選這裡立刻開啟對話 🚀](${SAAS_CHAT_UTM_URL})
-    \ 2️⃣ 如果你正在使用私有部署版本，點選[這裡](/#/auth)輸入存取金鑰 🔑
-    \ 3️⃣ 如果你想消耗自己的 OpenAI 資源，點選[這裡](/#/settings)修改設定 ⚙️
- `,
+      ? `😆 There's been a problem with the conversation, don't panic:
+1️⃣ Check if you've provided the correct API KEY [Learn more, click here 🚀](${SAAS_CHAT_UTM_URL})
+2️⃣ Click [here](/#/settings) to modify the settings, select the model service provider, interface: http://localhost:8880, and then enter the API KEY ⚙️`
+      : `😆 There's been a problem with the conversation, don't panic:
+1️⃣ [Learn more about the latest version, click here 🚀](${SAAS_CHAT_UTM_URL})
+2️⃣ Click [here](/#/settings) to modify the settings, select the model service provider, interface: http://localhost:8880, and then enter the API KEY ⚙️
+`,
   },
 
   Auth: {

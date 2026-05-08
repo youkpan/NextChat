@@ -8,14 +8,13 @@ const it: PartialLocaleType = {
   WIP: "Work in progress...",
   Error: {
     Unauthorized: isApp
-      ? `😆 La conversazione ha incontrato alcuni problemi, non preoccuparti:
-    \\ 1️⃣ Se vuoi iniziare senza configurazione, [clicca qui per iniziare a chattare immediatamente 🚀](${SAAS_CHAT_UTM_URL})
-    \\ 2️⃣ Se vuoi utilizzare le tue risorse OpenAI, clicca [qui](/#/settings) per modificare le impostazioni ⚙️`
-      : `😆 La conversazione ha incontrato alcuni problemi, non preoccuparti:
-    \ 1️⃣ Se vuoi iniziare senza configurazione, [clicca qui per iniziare a chattare immediatamente 🚀](${SAAS_CHAT_UTM_URL})
-    \ 2️⃣ Se stai utilizzando una versione di distribuzione privata, clicca [qui](/#/auth) per inserire la chiave di accesso 🔑
-    \ 3️⃣ Se vuoi utilizzare le tue risorse OpenAI, clicca [qui](/#/settings) per modificare le impostazioni ⚙️
- `,
+      ? `😆 There's been a problem with the conversation, don't panic:
+1️⃣ Check if you've provided the correct API KEY [Learn more, click here 🚀](${SAAS_CHAT_UTM_URL})
+2️⃣ Click [here](/#/settings) to modify the settings, select the model service provider, interface: http://localhost:8880, and then enter the API KEY ⚙️`
+      : `😆 There's been a problem with the conversation, don't panic:
+1️⃣ [Learn more about the latest version, click here 🚀](${SAAS_CHAT_UTM_URL})
+2️⃣ Click [here](/#/settings) to modify the settings, select the model service provider, interface: http://localhost:8880, and then enter the API KEY ⚙️
+`,
   },
   Auth: {
     Title: "Password richiesta",

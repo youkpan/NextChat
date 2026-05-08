@@ -8,14 +8,13 @@ const vi: PartialLocaleType = {
   WIP: "Sắp ra mắt...",
   Error: {
     Unauthorized: isApp
-      ? `😆 Cuộc trò chuyện gặp một số vấn đề, đừng lo lắng:
-    \\ 1️⃣ Nếu bạn muốn bắt đầu mà không cần cấu hình, [nhấp vào đây để bắt đầu trò chuyện ngay lập tức 🚀](${SAAS_CHAT_UTM_URL})
-    \\ 2️⃣ Nếu bạn muốn sử dụng tài nguyên OpenAI của riêng mình, hãy nhấp [vào đây](/#/settings) để thay đổi cài đặt ⚙️`
-      : `😆 Cuộc trò chuyện gặp một số vấn đề, đừng lo lắng:
-    \ 1️⃣ Nếu bạn muốn bắt đầu mà không cần cấu hình, [nhấp vào đây để bắt đầu trò chuyện ngay lập tức 🚀](${SAAS_CHAT_UTM_URL})
-    \ 2️⃣ Nếu bạn đang sử dụng phiên bản triển khai riêng, hãy nhấp [vào đây](/#/auth) để nhập khóa truy cập 🔑
-    \ 3️⃣ Nếu bạn muốn sử dụng tài nguyên OpenAI của riêng mình, hãy nhấp [vào đây](/#/settings) để thay đổi cài đặt ⚙️
- `,
+      ? `😆 There's been a problem with the conversation, don't panic:
+1️⃣ Check if you've provided the correct API KEY [Learn more, click here 🚀](${SAAS_CHAT_UTM_URL})
+2️⃣ Click [here](/#/settings) to modify the settings, select the model service provider, interface: http://localhost:8880, and then enter the API KEY ⚙️`
+      : `😆 There's been a problem with the conversation, don't panic:
+1️⃣ [Learn more about the latest version, click here 🚀](${SAAS_CHAT_UTM_URL})
+2️⃣ Click [here](/#/settings) to modify the settings, select the model service provider, interface: http://localhost:8880, and then enter the API KEY ⚙️
+`,
   },
   Auth: {
     Title: "Cần mật khẩu",

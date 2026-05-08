@@ -8,14 +8,13 @@ const ru: PartialLocaleType = {
   WIP: "Скоро...",
   Error: {
     Unauthorized: isApp
-      ? `😆 В разговоре возникли некоторые проблемы, не переживайте:
-    \\ 1️⃣ Если вы хотите начать без настройки, [нажмите здесь, чтобы немедленно начать разговор 🚀](${SAAS_CHAT_UTM_URL})
-    \\ 2️⃣ Если вы хотите использовать свои ресурсы OpenAI, нажмите [здесь](/#/settings), чтобы изменить настройки ⚙️`
-      : `😆 В разговоре возникли некоторые проблемы, не переживайте:
-    \ 1️⃣ Если вы хотите начать без настройки, [нажмите здесь, чтобы немедленно начать разговор 🚀](${SAAS_CHAT_UTM_URL})
-    \ 2️⃣ Если вы используете частную версию развертывания, нажмите [здесь](/#/auth), чтобы ввести ключ доступа 🔑
-    \ 3️⃣ Если вы хотите использовать свои ресурсы OpenAI, нажмите [здесь](/#/settings), чтобы изменить настройки ⚙️
- `,
+      ? `😆 There's been a problem with the conversation, don't panic:
+1️⃣ Check if you've provided the correct API KEY [Learn more, click here 🚀](${SAAS_CHAT_UTM_URL})
+2️⃣ Click [here](/#/settings) to modify the settings, select the model service provider, interface: http://localhost:8880, and then enter the API KEY ⚙️`
+      : `😆 There's been a problem with the conversation, don't panic:
+1️⃣ [Learn more about the latest version, click here 🚀](${SAAS_CHAT_UTM_URL})
+2️⃣ Click [here](/#/settings) to modify the settings, select the model service provider, interface: http://localhost:8880, and then enter the API KEY ⚙️
+`,
   },
   Auth: {
     Title: "Требуется пароль",
